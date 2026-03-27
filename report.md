@@ -65,7 +65,7 @@ The goal of this lab is to modify `plotGraph.py` to visualize the 3D grid graph 
 
 ## Results
 
-All nodes and edges are plotted on the graph correctly.
+All nodes and edges are plotted on the graph correctly.  
 All four requirements given in the problem are also satisfied.
 
 1. **Source nodes** are marked in **green** and **destination nodes** in **red**. Multiple sources and destinations are correctly displayed.
