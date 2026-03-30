@@ -101,11 +101,11 @@ def plotMyGridGraph(graph, path=None):
         ax.scatter(*zip(*src_nodes), c='green', s=30, label='Source')
 
     # Destination 노드를 빨간색 점으로 표현
-    if dst_nodes현
+    if dst_nodes:
         ax.scatter(*zip(*dst_nodes), c='red', s=30, label='Destination')
 
     # 경로를 노란색 실선으로 표현
-    if path선
+    if path:
         px, py, pz = zip(*path)
         ax.plot(px, py, pz, 'y-', linewidth=3, label='Path')
         ax.scatter(px, py, pz, c='yellow', s=30)
@@ -113,7 +113,7 @@ def plotMyGridGraph(graph, path=None):
     # 라벨 표시, 그래프 제목 지정, 그래프 시각화
     ax.set_xlabel('X')
     ax.set_ylabel('Y')
-    ax.set_zlabel('Z (Layer)'화
+    ax.set_zlabel('Z (Layer)')
     ax.legend()
     plt.title('3D Grid Graph')
     plt.savefig('grid_graph.png')
